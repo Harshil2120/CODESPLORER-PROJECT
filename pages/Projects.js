@@ -1,15 +1,15 @@
 import Head from 'next/head'
 
-export default function Home() {
+export default function Projects() {
   return (
     <>
       <Head>
-        <title>CodeSplorer | Home</title>
+        <title>CodeSplorer | Projects</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <link rel='icon' href='/rocket.png' type='image/x-icon'></link>
       </Head>
       <div className='flex flex-col items-center w-full h-full bg-black p-20'>
-        <h1 className='text-3xl text-white font-bold'>🚀Home Page🚀</h1>
+        <h1 className='text-3xl text-white font-bold'>🚀Projects Page🚀</h1>
         <p className='text-white p-2'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quos
           voluptatibus maxime at error corrupti nobis laboriosam assumenda non

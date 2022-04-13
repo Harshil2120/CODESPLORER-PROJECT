@@ -2,12 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --text-secondary: #b6b6b6;
+  --bg-main: #14141a;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg-main);
+  border: solid 3px var(--bg-main);
+  opacity: 0.3;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+  border: solid 3px var(--bg-main);
+  border-radius: 10px;
+  opacity: 0.3;
 }
 
 a {
