@@ -8,9 +8,9 @@ export default function Projects() {
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <link rel='icon' href='/rocket.png' type='image/x-icon'></link>
       </Head>
-      <div className='flex flex-col items-center w-full h-full bg-black p-20'>
-        <h1 className='text-3xl text-white font-bold'>🚀Projects Page🚀</h1>
-        <p className='text-white p-2'>
+      <div className='flex flex-col items-center w-full h-full p-20'>
+        <h1 className='text-3xl font-bold'>🚀Projects Page🚀</h1>
+        <p className=' p-2'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quos
           voluptatibus maxime at error corrupti nobis laboriosam assumenda non
           eligendi? At accusantium iusto amet est deserunt eveniet cum nemo,
@@ -45,7 +45,7 @@ export default function Projects() {
           minima incidunt at doloremque, nesciunt magni sunt? Sapiente tempora
           autem eum porro impedit.
         </p>
-        <p className='text-white p-2'>
+        <p className=' p-2'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quos
           voluptatibus maxime at error corrupti nobis laboriosam assumenda non
           eligendi? At accusantium iusto amet est deserunt eveniet cum nemo,
@@ -80,7 +80,7 @@ export default function Projects() {
           minima incidunt at doloremque, nesciunt magni sunt? Sapiente tempora
           autem eum porro impedit.
         </p>
-        <p className='text-white p-2'>
+        <p className=' p-2'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quos
           voluptatibus maxime at error corrupti nobis laboriosam assumenda non
           eligendi? At accusantium iusto amet est deserunt eveniet cum nemo,
@@ -115,7 +115,7 @@ export default function Projects() {
           minima incidunt at doloremque, nesciunt magni sunt? Sapiente tempora
           autem eum porro impedit.
         </p>
-        <p className='text-white p-2'>
+        <p className=' p-2'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quos
           voluptatibus maxime at error corrupti nobis laboriosam assumenda non
           eligendi? At accusantium iusto amet est deserunt eveniet cum nemo,

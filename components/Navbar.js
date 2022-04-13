@@ -2,14 +2,50 @@ import Menuicon from './Menuicon'
 import Closeicon from './Closeicon'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
+import { useTheme } from 'next-themes'
+import Sunicon from './Sunicon'
+import Moonicon from './Moonicon'
 
 const Navbar = (props) => {
+  const { systemTheme, theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(()=>{
+    setMounted(true)
+  },[])
+
+  const renderThemeChanger = () => {
+    if(!mounted) return null;
+    const currentTheme = theme === 'system' ? systemTheme : theme
+
+    if (currentTheme === 'dark') {
+      return (
+        <>
+        <Sunicon
+          className='w-7 h-7'
+          role='button'
+          onClick={() => setTheme('light')}
+        />
+        </>
+      )
+    } else {
+      return (
+        <>
+        <Moonicon
+          className='w-7 h-7'
+          role='button'
+          onClick={() => setTheme('dark')}
+        />
+        </>
+      )
+    }
+  }
   const [open, setOpen] = useState(false)
   return (
     <>
-      <nav className='bg-black w-screen h-[72px] bg-gradient-to-r from-orange-400 via-red-500 to-pink-600 border-b-2 fixed top-0 left-0 flex'></nav>
-      <nav className='bg-black w-screen h-[72px] border-b-2 border-dashed border-slate-800 fixed top-2 left-0 text-white flex md:justify-between'>
+      <nav className='w-screen h-[72px] bg-gradient-to-r from-orange-400 via-red-500 to-pink-600 border-b-2 fixed top-0 left-0 flex'></nav>
+      <nav className=' w-screen h-[72px] border-b-2 border-dashed bg-black border-slate-600 fixed top-2 left-0 text-white flex md:justify-between'>
         <div className='flex px-2 items-center h-full'>
           <div className='text-3xl p-2 hover:cursor-pointer'>🚀</div>
           <h1 className='text-2xl font-bold hover:cursor-pointer hover:opacity-80 transition-all'>
@@ -32,6 +68,9 @@ const Navbar = (props) => {
             open ? 'right-0' : 'right-[-100%] invisible md:visible'
           } transition-all duration-300 ease-in-out`}
         >
+          <li className='hover:cursor-pointer p-3 md:px-6 text-2xl font-semibold hover:text-yellow-200'>
+            {renderThemeChanger()}
+          </li>
           <li className='hover:cursor-pointer p-2 md:px-6 text-2xl font-semibold hover:text-sky-500 transition-all duration-200'>
             <Link href='/'>
               <a>Home</a>
