@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import Image from 'next/image'
 export default function Home() {
   return (
     <>
@@ -8,9 +8,31 @@ export default function Home() {
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <link rel='icon' href='/rocket.png' type='image/x-icon'></link>
       </Head>
-      <div className='flex flex-col items-center w-full h-full  p-20'>
-        <h1 className='text-3xl font-bold first-letter:font-bold'>🚀Home Page🚀</h1>
-        <p className=' p-2'>
+      <div className='flex flex-col items-center w-full h-full pt-24 pl-24 pr-24 space-y-3'>
+        <h1 className='text-4xl font-extrabold'>
+          <span className='hover:text-transparent bg-gradient-to-br from-sky-800 to-sky-200 via-sky-500 bg-clip-text transition-all duration-300'>
+            Explore.Learn.
+          </span>
+        </h1>
+        <h1 className='text-4xl font-extrabold'>
+          <span className='hover:text-transparent bg-gradient-to-br from-indigo-800 via-fuchsia-700 to-pink-400 bg-clip-text transition-all duration-300'>
+            Blog.Portfolio.
+          </span>
+        </h1>
+        <div className=' border-b-2 py-2 border-dashed border-slate-400 -z-10'>
+          <Image
+            src='/home.svg'
+            alt='profile'
+            width='400px'
+            height='400px'
+            className='rounded-full -z-10'
+            priority
+          />
+        </div>
+      </div>
+      <div className='flex flex-col items-center w-full h-full p-8'>
+        <h1 className='text-3xl font-bold'>🚀Home Page🚀</h1>
+        <p className=' p-2 text-center'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quos
           voluptatibus maxime at error corrupti nobis laboriosam assumenda non
           eligendi? At accusantium iusto amet est deserunt eveniet cum nemo,
@@ -45,7 +67,7 @@ export default function Home() {
           minima incidunt at doloremque, nesciunt magni sunt? Sapiente tempora
           autem eum porro impedit.
         </p>
-        <p className=' p-2'>
+        <p className=' p-2 text-center'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quos
           voluptatibus maxime at error corrupti nobis laboriosam assumenda non
           eligendi? At accusantium iusto amet est deserunt eveniet cum nemo,
@@ -80,7 +102,7 @@ export default function Home() {
           minima incidunt at doloremque, nesciunt magni sunt? Sapiente tempora
           autem eum porro impedit.
         </p>
-        <p className=' p-2'>
+        <p className=' p-2 text-center'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quos
           voluptatibus maxime at error corrupti nobis laboriosam assumenda non
           eligendi? At accusantium iusto amet est deserunt eveniet cum nemo,
@@ -115,7 +137,7 @@ export default function Home() {
           minima incidunt at doloremque, nesciunt magni sunt? Sapiente tempora
           autem eum porro impedit.
         </p>
-        <p className=' p-2'>
+        <p className=' p-2 text-center'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quos
           voluptatibus maxime at error corrupti nobis laboriosam assumenda non
           eligendi? At accusantium iusto amet est deserunt eveniet cum nemo,

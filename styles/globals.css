@@ -44,5 +44,4 @@ a {
   body {
     @apply bg-zinc-200 text-black dark:bg-black dark:text-gray-100 transition-all duration-500;
   }
-
 }

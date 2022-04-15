@@ -4,8 +4,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState,useEffect } from 'react'
 import { useTheme } from 'next-themes'
-import Sunicon from './Sunicon'
-import Moonicon from './Moonicon'
 
 const Navbar = (props) => {
   const { systemTheme, theme, setTheme } = useTheme()
@@ -22,21 +20,21 @@ const Navbar = (props) => {
     if (currentTheme === 'dark') {
       return (
         <>
-        <Sunicon
+        <button
           className='w-7 h-7'
           role='button'
           onClick={() => setTheme('light')}
-        />
+        >🌞</button>
         </>
       )
     } else {
       return (
         <>
-        <Moonicon
+        <button
           className='w-7 h-7'
           role='button'
           onClick={() => setTheme('dark')}
-        />
+        >🌛</button>
         </>
       )
     }
@@ -81,24 +79,26 @@ const Navbar = (props) => {
               <a>Projects</a>
             </Link>
           </li>
-          <li className='hover:cursor-pointer p-2 md:px-6 text-2xl font-semibold hover:text-sky-500 transition-all duration-200'>
+          <li className='hover:cursor-pointer p-2 md:px-6 text-2xl font-semibold hover:text-sky-500 transition-all duration-200 z-10'>
             <Link href='/About'>
               <a>About</a>
             </Link>
           </li>
-          <li className='hover:cursor-pointer pt-3 md:px-6 text-2xl font-semibold  hover:text-sky-500 transition-all duration-200'>
+          <li className='hover:cursor-pointer pt-3 md:px-6 text-2xl font-semibold hover:text-sky-500 transition-all duration-200 z-10'>
             <a
               href='https://github.com/Harshil2120/CODESPLORER-PROJECT/'
               target='_blank'
             >
-              <Image
-                src='/github-icon.svg'
-                alt='Github'
-                width={42}
-                height={42}
-                priority
-                className='hover:opacity-[.85] transition-all duration-150'
-              />
+              <div className='-z-10'>
+                <Image
+                  src='/github-icon.svg'
+                  alt='Github'
+                  width={42}
+                  height={42}
+                  priority
+                  className='hover:opacity-[.85] transition-all duration-150'
+                />
+              </div>
             </a>
           </li>
         </ul>
