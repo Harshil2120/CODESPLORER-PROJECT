@@ -88,6 +88,7 @@ const Navbar = (props) => {
             <a
               href='https://github.com/Harshil2120/CODESPLORER-PROJECT/'
               target='_blank'
+              rel='noopener noreferrer'
             >
               <div className='-z-10'>
                 <Image
