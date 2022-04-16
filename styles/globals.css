@@ -21,14 +21,12 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
   background: var(--bg-main);
   border: solid 3px var(--bg-main);
-  opacity: 0.3;
 }
 
 body::-webkit-scrollbar-thumb {
   background: var(--text-secondary);
   border: solid 3px var(--bg-main);
   border-radius: 10px;
-  opacity: 0.3;
 }
 
 a {
