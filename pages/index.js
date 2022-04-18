@@ -1,39 +1,60 @@
 import Head from 'next/head'
 import Image from 'next/image'
+
 export default function Home() {
   return (
     <>
       <Head>
-        <title>CodeSplorer | Home</title>
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta charSet='utf-8' />
         <link rel='icon' href='/rocket.png' type='image/x-icon'></link>
+        <meta
+          name='twitter:card'
+          content='CodeSplorer blogs and portfolio'
+          key='twcard'
+        />
+        <meta name='twitter:creator' content='@donga_harshil' key='twhandle' />
+        <meta property='og:url' content='www.codesplorer.me' key='ogurl' />
+        <meta property='og:image' content='/codesplore.jpg' key='ogimage' />
+        <meta
+          property='og:site_name'
+          content='CodeSplorer.me'
+          key='ogsitename'
+        />
+        <meta property='og:title' content='CodeSplorer | Home' key='ogtitle' />
+        <meta
+          property='og:description'
+          content='Blogs related to new technologies learnt'
+          key='ogdesc'
+        />
+        <title>CodeSplorer | Home</title>
       </Head>
-
-      <div className='flex md:flex-row flex-col items-center w-full h-full pt-24 md:pt-[70px] pl-24 pr-24 space-y-3'>
+      <div className='pt-24 py-7 flex flex-col lg:flex-row items-center justify-center w-full h-full xl:space-x-72 lg:space-x-48 space-y-2'>
         <div>
-          <h1 className='text-4xl md:text-8xl font-extrabold p-1'>
+          <h1 className='text-5xl xl:text-8xl py-1 font-extrabold lg:text-6xl '>
             <span className='hover:text-transparent bg-gradient-to-br from-sky-800 to-sky-200 via-sky-500 bg-clip-text'>
               Explore.Learn.
             </span>
           </h1>
-          <h1 className='text-4xl md:text-8xl font-extrabold p-1'>
+          <h1 className='text-5xl xl:text-8xl lg:text-6xl py-1 font-extrabold '>
             <span className='hover:text-transparent bg-gradient-to-br from-indigo-800 via-fuchsia-700 to-pink-400 bg-clip-text '>
               Blog.Portfolio.
             </span>
           </h1>
         </div>
-        <div className=' border-b-2 py-2 md:ml-auto md:mr-14 md:border-0 border-dashed border-slate-400 -z-10'>
+        <div className='-z-10'>
           <Image
             src='/home.svg'
             alt='profile'
             width='350'
             height='350'
-            className='rounded-full -z-10'
+            className='-z-10'
             priority
           />
         </div>
       </div>
-      <div className='flex flex-col items-center w-full h-full p-8 md:border-t-2 md:border-dashed border-slate-400 '>
+
+      <div className='flex pt-[80px] flex-col items-center w-full h-full p-8 border-t-2 border-dashed md:border-t-2 md:border-dashed border-slate-600 '>
         <h1 className='text-3xl font-bold'>🚀Home Page🚀</h1>
         <p className=' p-2 text-center'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quos

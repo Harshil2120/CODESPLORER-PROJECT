@@ -4,9 +4,29 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>CodeSplorer | Projects</title>
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta charSet='utf-8' />
         <link rel='icon' href='/rocket.png' type='image/x-icon'></link>
+        <meta name='twitter:card' content='CodeSplorer Projects' key='twcard' />
+        <meta name='twitter:creator' content='@donga_harshil' key='twhandle' />
+        <meta property='og:url' content='www.codesplorer.me' key='ogurl' />
+        <meta property='og:image' content='/codesplore.jpg' key='ogimage' />
+        <meta
+          property='og:site_name'
+          content='CodeSplorer.me'
+          key='ogsitename'
+        />
+        <meta
+          property='og:title'
+          content='CodeSplorer | Projects'
+          key='ogtitle'
+        />
+        <meta
+          property='og:description'
+          content='Projects made by Harshil Donga'
+          key='ogdesc'
+        />
+        <title>CodeSplorer | Projects</title>
       </Head>
       <div className='flex flex-col items-center w-full h-full p-24'>
         <h1 className='text-3xl font-bold'>🚀Projects Page🚀</h1>
