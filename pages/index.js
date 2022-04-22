@@ -46,8 +46,8 @@ export default function Home() {
           <Image
             src='/home.svg'
             alt='profile'
-            width='350'
-            height='350'
+            width={350}
+            height={350}
             className='-z-10'
             priority
           />
