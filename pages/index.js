@@ -32,9 +32,9 @@ export default function Home({ blog_posts }) {
         />
         <title>CodeSplorer | Home</title>
       </Head>
-      <h1 className=' pt-[84px] text-center text-xl'>
-        <b>🚧 Project-Codesplorer is under construction 🚧</b>
-      </h1>
+      <h2 className=' pt-[84px] text-center text-xl'>
+        <b>🚧 Codesplorer.me under construction 🚧</b>
+      </h2>
       <div className='py-4 flex flex-col lg:flex-row items-center justify-center w-full h-full xl:space-x-72 lg:space-x-48 space-y-2'>
         <div>
           <h1 className='text-5xl xl:text-8xl py-1 font-extrabold lg:text-6xl '>
@@ -61,7 +61,7 @@ export default function Home({ blog_posts }) {
       </div>
 
       <div className='flex pt-[30px] pb-[90px] flex-col items-center w-full h-full p-8 border-t-2 border-dashed  border-slate-800 dark:border-slate-800'>
-        <h1 className='text-3xl font-bold p-9'>👾 My Blog Posts 👾</h1>
+        <h2 className='text-3xl font-bold p-9'>👾 Blog Posts 👾</h2>
 
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4'>
           {blog_posts.map((post, index) => (
