@@ -4,7 +4,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Card from '../components/Card'
-export default function Home({blog_posts }) {
+export default function Home({ blog_posts }) {
   return (
     <>
       <Head>
@@ -65,7 +65,7 @@ export default function Home({blog_posts }) {
 
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4'>
           {blog_posts.map((post, index) => (
-            <Card post={post} />
+            <Card key={index} post={post} />
           ))}
         </div>
       </div>
@@ -84,7 +84,6 @@ export async function getStaticProps() {
     const { data: frontmatter } = matter(markdownmeta)
     return { slug, frontmatter }
   })
-
 
   return {
     props: {
