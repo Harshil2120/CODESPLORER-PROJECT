@@ -4,7 +4,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Card from '../components/Card'
-export default function Home({ posts }) {
+export default function Home({blog_posts }) {
   return (
     <>
       <Head>
@@ -64,7 +64,7 @@ export default function Home({ posts }) {
         <h1 className='text-3xl font-bold p-9'>👾 My Blog Posts 👾</h1>
 
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4'>
-          {posts.map((post, index) => (
+          {blog_posts.map((post, index) => (
             <Card post={post} />
           ))}
         </div>
@@ -76,7 +76,7 @@ export default function Home({ posts }) {
 export async function getStaticProps() {
   const files = fs.readdirSync(path.join('posts'))
 
-  const posts = files.map((filename) => {
+  const blog_posts = files.map((filename) => {
     const slug = filename.replace('.md', '')
 
     const markdownmeta = fs.readFileSync(path.join('posts', filename), 'utf-8')
@@ -85,11 +85,10 @@ export async function getStaticProps() {
     return { slug, frontmatter }
   })
 
-  console.log(posts)
 
   return {
     props: {
-      posts,
+      blog_posts,
     },
   }
 }
