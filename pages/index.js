@@ -11,14 +11,31 @@ export default function Home({ blog_posts }) {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta charSet='utf-8' />
         <link rel='icon' href='/rocket.png' type='image/x-icon'></link>
+        <meta name='twitter:card' content='summary_large_image' />
         <meta
-          name='twitter:card'
-          content='CodeSplorer blogs and portfolio'
-          key='twcard'
+          name='twitter:title'
+          content='CodeSplorer | Explore.Learn.Blog.Portfolio.'
         />
-        <meta name='twitter:creator' content='@donga_harshil' key='twhandle' />
-        <meta property='og:url' content='www.codesplorer.me' key='ogurl' />
-        <meta property='og:image' content='/codesplore.jpg' key='ogimage' />
+        <meta
+          name='twitter:description'
+          content='Blogs related to new technologies learnt'
+        />
+        <meta name='twitter:site' content='@donga_harshil' />
+        <meta
+          name='twitter:image'
+          content='https://www.codesplorer.me/codesplore.jpg'
+        />
+        <meta name='twitter:creator' content='@donga_harshil' />
+        <meta
+          property='og:url'
+          content='https://www.codesplorer.me'
+          key='ogurl'
+        />
+        <meta
+          property='og:image'
+          content='https://www.codesplorer.me/codesplore.jpg'
+          key='ogimage'
+        />
         <meta
           property='og:site_name'
           content='CodeSplorer.me'
