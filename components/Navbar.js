@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 
 const Navbar = (props) => {
-  const { systemTheme, theme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme('dark')
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const Navbar = (props) => {
 
   const renderThemeChanger = () => {
     if (!mounted) return null
-    const currentTheme = theme === 'system' ? systemTheme : theme
+    const currentTheme = theme
 
     if (currentTheme === 'dark') {
       return (
@@ -73,7 +73,6 @@ const Navbar = (props) => {
             open ? 'right-0' : 'right-[-100%] invisible md:visible'
           } transition-all duration-300 ease-in-out`}
         >
-         
           <li className='hover:cursor-pointer p-[7px] md:px-6 text-2xl font-semibold hover:text-sky-500 transition-all duration-200'>
             <Link href='/'>
               <a>Home</a>

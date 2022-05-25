@@ -49,10 +49,7 @@ export default function Home({ blog_posts }) {
         />
         <title>CodeSplorer | Home</title>
       </Head>
-      <h2 className=' pt-[84px] text-center text-xl'>
-        <b>🚧 Codesplorer.me under construction 🚧</b>
-      </h2>
-      <div className='py-4 flex flex-col lg:flex-row items-center justify-center w-full h-full xl:space-x-72 lg:space-x-48 space-y-2'>
+      <div className='pt-[84px] py-4 flex flex-col lg:flex-row items-center justify-center w-full h-full xl:space-x-72 lg:space-x-48 space-y-2'>
         <div>
           <h1 className='text-5xl xl:text-8xl py-1 font-extrabold lg:text-6xl '>
             <span className='hover:text-transparent bg-gradient-to-br from-sky-800 to-sky-200 via-sky-500 bg-clip-text'>
