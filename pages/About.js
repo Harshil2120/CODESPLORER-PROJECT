@@ -125,67 +125,67 @@ export default function About() {
             <h2 className='text-2xl font-extrabold pt-8 pb-4'>
               Front-End Skills
             </h2>
-            <div class='grid grid-cols-2 md:grid-cols-4 gap-4 p-6 border-t-2 border-dashed border-black dark:border-white'>
-              <button class='shadow bg-transparent hover:bg-orange-500 text-orange-700 font-semibold hover:text-white py-2 px-4 border border-orange-600 hover:border-transparent rounded'>
+            <div className='grid grid-cols-2 md:grid-cols-4 gap-4 p-6 border-t-2 border-dashed border-black dark:border-white'>
+              <button className='shadow bg-transparent hover:bg-orange-500 text-orange-700 font-semibold hover:text-white py-2 px-4 border border-orange-600 hover:border-transparent rounded'>
                 HTML
               </button>
-              <button class='shadow bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded'>
+              <button className='shadow bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded'>
                 CSS
               </button>
-              <button class='shadow bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent rounded'>
+              <button className='shadow bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent rounded'>
                 JAVASCRIPT
               </button>
-              <button class='shadow bg-transparent hover:bg-cyan-500 text-cyan-700 font-semibold hover:text-white py-2 px-4 border border-cyan-600 hover:border-transparent rounded'>
+              <button className='shadow bg-transparent hover:bg-cyan-500 text-cyan-700 font-semibold hover:text-white py-2 px-4 border border-cyan-600 hover:border-transparent rounded'>
                 TAILWIND-CSS
               </button>
-              <button class='shadow bg-transparent hover:bg-purple-500 text-purple-700 font-semibold hover:text-white py-2 px-4 border border-purple-500 hover:border-transparent rounded'>
+              <button className='shadow bg-transparent hover:bg-purple-500 text-purple-700 font-semibold hover:text-white py-2 px-4 border border-purple-500 hover:border-transparent rounded'>
                 BOOTSTRAP
               </button>
-              <button class='shadow bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded'>
+              <button className='shadow bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded'>
                 THYMELEAF
               </button>
             </div>
             <h2 className='text-2xl font-extrabold pt-2 pb-4'>
               Back-End Skills
             </h2>
-            <div class='grid grid-cols-2 md:grid-cols-4 gap-4 p-6 border-t-2 border-dashed border-black dark:border-white'>
-              <button class='shadow bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded'>
+            <div className='grid grid-cols-2 md:grid-cols-4 gap-4 p-6 border-t-2 border-dashed border-black dark:border-white'>
+              <button className='shadow bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded'>
                 JAVA
               </button>
-              <button class='shadow bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500  hover:border-transparent rounded'>
+              <button className='shadow bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500  hover:border-transparent rounded'>
                 SPRING
               </button>
-              <button class='shadow bg-transparent hover:bg-pink-600 text-pink-700 font-semibold hover:text-white py-2 px-4 border border-pink-500 hover:border-transparent rounded'>
+              <button className='shadow bg-transparent hover:bg-pink-600 text-pink-700 font-semibold hover:text-white py-2 px-4 border border-pink-500 hover:border-transparent rounded'>
                 REST-API
               </button>
-              <button class='shadow bg-transparent hover:bg-green-600 text-green-800 font-semibold hover:text-white py-2 px-4 border border-green-700  hover:border-transparent rounded'>
+              <button className='shadow bg-transparent hover:bg-green-600 text-green-800 font-semibold hover:text-white py-2 px-4 border border-green-700  hover:border-transparent rounded'>
                 SPRING-BOOT
               </button>
-              <button class='shadow bg-transparent hover:bg-lime-500 text-lime-700 font-semibold hover:text-white py-2 px-4 border border-lime-500 hover:border-transparent rounded'>
+              <button className='shadow bg-transparent hover:bg-lime-500 text-lime-700 font-semibold hover:text-white py-2 px-4 border border-lime-500 hover:border-transparent rounded'>
                 JPA
               </button>
-              <button class='shadow bg-transparent hover:bg-rose-600 text-rose-700 font-semibold hover:text-white py-2 px-4 border border-rose-500 hover:border-transparent rounded'>
+              <button className='shadow bg-transparent hover:bg-rose-600 text-rose-700 font-semibold hover:text-white py-2 px-4 border border-rose-500 hover:border-transparent rounded'>
                 JDBC
               </button>
-              <button class='shadow bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded'>
+              <button className='shadow bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded'>
                 MYSQL
               </button>
-              <button class='shadow bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded'>
+              <button className='shadow bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded'>
                 MAVEN
               </button>
             </div>
             <h2 className='text-2xl font-extrabold pt-2 pb-4'>Beginner</h2>
-            <div class='grid grid-cols-2 md:grid-cols-4 gap-4 p-6 border-t-2 border-dashed border-black dark:border-white'>
-              <button class='shadow bg-transparent hover:bg-green-600 text-green-800 font-semibold hover:text-white py-2 px-4 border border-green-700 hover:border-transparent rounded'>
+            <div className='grid grid-cols-2 md:grid-cols-4 gap-4 p-6 border-t-2 border-dashed border-black dark:border-white'>
+              <button className='shadow bg-transparent hover:bg-green-600 text-green-800 font-semibold hover:text-white py-2 px-4 border border-green-700 hover:border-transparent rounded'>
                 NodeJs
               </button>
-              <button class='shadow bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded'>
+              <button className='shadow bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded'>
                 ReactJs
               </button>
-              <button class='shadow bg-transparent hover:bg-slate-400 text-slate-500 font-semibold hover:text-black py-2 px-4 border border-slate-500 hover:border-transparent rounded'>
+              <button className='shadow bg-transparent hover:bg-slate-400 text-slate-500 font-semibold hover:text-black py-2 px-4 border border-slate-500 hover:border-transparent rounded'>
                 NextJs
               </button>
-              <button class='shadow bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded'>
+              <button className='shadow bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded'>
                 Docker
               </button>
             </div>
