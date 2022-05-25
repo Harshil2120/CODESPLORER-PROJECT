@@ -111,13 +111,13 @@ export default function About() {
           </div>
           <div className='prose max-w-5xl pt-8 pb-8 dark:prose-dark xl:col-span-2'>
             <h1 className='text-3xl text-center md:text-justify xl:text-3xl py-1 font-extrabold lg:text-3xl '>
-              <span>Hello! I'm Harshil 👋</span>
+              <span>Hello! I&apos;m Harshil 👋</span>
             </h1>
             <h3 className='text-xl xl:text-xl text-justify md:text-justify lg:text-xl py-1 font-bold '>
               <span>
                 Welcome to Codesplorer.me! This website is about showcasing my
                 profile, portfolio and blog posts about some interesting things
-                that i learn. I'm currently working as Associate Software
+                that i learn. I&apos;m currently working as Associate Software
                 Engineer at Accenture under Java domain and aspire to become
                 Full-Stack Developer.
               </span>
