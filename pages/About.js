@@ -39,7 +39,7 @@ export default function About() {
         />
         <title>CodeSplorer | About</title>
       </Head>
-      <div className='divide-y pt-24 px-14'>
+      <div className='divide-y pt-24 px-5 md:px-14'>
         <div className='items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-4 xl:space-y-0'>
           <div className='flex flex-col items-center pt-8'>
             <Image
@@ -110,7 +110,7 @@ export default function About() {
             </div>
           </div>
           <div className='prose max-w-5xl pt-8 pb-8 dark:prose-dark xl:col-span-2'>
-            <h1 className='text-3xl text-center md:text-justify xl:text-3xl py-1 font-extrabold lg:text-3xl '>
+            <h1 className='text-2xl text-center md:text-justify xl:text-3xl py-1 font-extrabold lg:text-3xl '>
               <span>Hello! I&apos;m Harshil 👋</span>
             </h1>
             <h3 className='text-xl xl:text-xl text-justify md:text-justify lg:text-xl py-1 font-bold '>
